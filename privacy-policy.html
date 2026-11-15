@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viper Byte – Privacy Policy</title>
+<style>
+  :root { --ink: #1f2a24; --muted: #55625a; --bg: #f6f8f5; --card: #ffffff; --line: #dde3dd; --accent: #2f6b4f; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e6efe9; --muted: #a9b8af; --bg: #121714; --card: #1a211d; --line: #2b352f; --accent: #7fd1a6; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; color: var(--accent); }
+  p, li { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-top: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<div class="card">
+<h1>Privacy Policy – Viper Byte</h1>
+<p class="muted">Published by M.A.D.S. India · Last updated: 15 November 2026</p>
+
+<p>Viper Byte is a retro-style Snake game that also contains a private, end-to-end encrypted chat between people who have approved each other as "buddies". The chat is opened with a secret key combination chosen by the user. Viper Byte is made and run by one person, Debdyut Sarker ("the developer"), publishing as M.A.D.S. India; in this policy "we" and "us" mean the developer. This policy explains what information the app uses, where it goes, and the choices you have. We built the app to collect as little as possible. Using the app also means agreeing to our <a href="terms-of-use.html">Terms of Use</a>.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>No phone number, email address or contacts are needed or collected. Your identity in the chat is a random private ID made on your phone.</li>
+  <li>Messages and profile photos are end-to-end encrypted with the Signal Protocol. Our server only ever holds scrambled data it cannot read, and deletes each message once your buddy's phone has received it.</li>
+  <li>Your name and photo stay on your phone and are shared only with your buddies, encrypted.</li>
+  <li>Game data (scores, settings, medals) stays on your phone.</li>
+  <li>There are no ads, no advertising ID and no selling of data.</li>
+</ul>
+
+<h2>Information stored on our server</h2>
+<p>The chat uses a server (Supabase, a hosting provider, in its Mumbai, India region) only to pass sealed messages between phones and to know who is buddies with whom. It stores:</p>
+<table>
+  <tr><th>What</th><th>Why</th></tr>
+  <tr><td>Your private ID and public encryption keys (your identity key and "starter pack" keys)</td><td>So buddies can find you and open an encrypted line to you. These are public keys; the private keys never leave your phone.</td></tr>
+  <tr><td>An anonymous sign-in account linked to your private ID</td><td>So only your phone can collect your messages. It contains no name, email or phone number.</td></tr>
+  <tr><td>Your buddy list (pairs of private IDs), blocks, and buddy requests</td><td>To deliver messages only between approved buddies. A request carries your chosen name sealed so only the receiver can read it.</td></tr>
+  <tr><td>Encrypted messages waiting to be delivered</td><td>Held only until the receiving phone collects them, then deleted. We cannot read them.</td></tr>
+  <tr><td>Whether you are online and when you were last seen</td><td>Shown to your buddies. You can turn this off in the chat's Privacy settings.</td></tr>
+  <tr><td>Your plan (free or Pro), when purchases are added</td><td>To apply the right buddy limit.</td></tr>
+  <tr><td>Pro trial record: your private ID, a scrambled phone code (a salted, hashed form of the app's own Android ID, not the ID itself) and the trial's start and end time</td><td>So each account and each phone gets the free 15-day Pro trial only once. This record is kept even after you delete your account (see below).</td></tr>
+  <tr><td>Reports: when you report a buddy, your private ID, their private ID, the reason you picked and the time; and, only if you choose to add it, a sealed copy of the chat's last 10 messages as proof (see "Proof with a report" below)</td><td>To look into the report, keep users safe and meet our legal duties. Without proof, no message, name or photo is sent. The proof is sealed on your phone, so our server holds only scrambled text; only the developer can open it. Reports can only be read by us, never by the app or the person reported.</td></tr>
+  <tr><td>Suspensions: if an account is suspended (see the Terms of Use), its private ID, the reason, and the start and end of the suspension</td><td>So the server can stop a suspended account from sending messages or buddy requests, and so the app can show the person when it ends and how to appeal. Nothing else is kept, and only we can read it.</td></tr>
+  <tr><td>Security log: your private ID, the name of the event and its time, only for these events: account created, account restored to a new phone, account deleted, report made, account suspended, suspension lifted</td><td>India's CERT-In directions (April 2022) require us to keep logs of our systems for at least 180 days, in India, and India's data protection rules may ask for at least one year; we keep them for one year, and to share them with CERT-In or another lawful authority on a valid request. The log is kept on our server in India, holds no message, name, photo, phone number, email or IP address, and only we can read it.</td></tr>
+</table>
+
+<h2>Proof with a report</h2>
+<p>When you report a buddy, the app asks <b>"Add Messages as Proof?"</b> with two choices, <b>Add Last 10 Messages</b> and <b>Without Messages</b>. Neither is picked for you. If you report one message (press and hold it &gt; Report), that message and the 9 before it are added.</p>
+<ul>
+  <li><b>What the proof holds:</b> the chat's last 10 messages as they are shown on your phone: text, stickers, replies, small copies of photos (at most 640 pixels) and the first frame of a video. Voice messages and view-once photos are not included, only a line saying one was there. It also holds both private IDs, the reason and the time.</li>
+  <li><b>How it is protected:</b> it is sealed on your phone with the developer's public key (using libsignal, the same library as the chats), so our server holds only scrambled text it cannot open. Only the developer can open it, on the developer's own computer, with a private key kept offline.</li>
+  <li><b>It leaves your phone only if you choose it.</b> If you pick Without Messages, no message content is sent.</li>
+  <li><b>The other person's messages:</b> the proof includes messages the reported person sent you, shared without their consent. We allow this only to keep users safe and to stop unlawful content, as the DPDP Act 2023 permits for such "legitimate uses" and as the IT Rules 2021 require of us (due diligence on reported content).</li>
+  <li><b>What it can and cannot show:</b> a changed copy of the app could fake messages, so proof is one thing we look at, never the only reason for a decision.</li>
+  <li><b>Kept:</b> with the report, for up to 180 days, then deleted (see below).</li>
+</ul>
+
+<h2>Information that stays on your phone</h2>
+<ul>
+  <li>Your messages, your buddies' names and photos, your own name and photo, your 12 secret words and private keys — kept in an encrypted database protected by Android's secure key storage.</li>
+  <li>Your secret combinations and app PIN — stored only as scrambled (salted and hashed) values, never as the combination or PIN itself.</li>
+  <li>Game data: high scores, medals, coins, chosen looks and settings.</li>
+</ul>
+
+<h2>Camera</h2>
+<p>The camera is used only when you choose to scan a buddy's QR code or take a profile photo. Pictures are not saved to your gallery and are never uploaded readable; a profile photo is shared only with your buddies, end-to-end encrypted.</p>
+
+<h2>Features that use other services</h2>
+<ul>
+  <li><b>Notifications</b> (Firebase Cloud Messaging by Google): a silent signal tells your phone that new mail is waiting. It carries no message content or sender name, and the notification you see shows only a game-style text. This uses a device push token stored on our server.</li>
+  <li><b>Crash reports</b> (Firebase Crashlytics by Google): if the app crashes, a technical report (device model, Android version, the app's internal error details) is sent so we can fix it. It never includes your messages, names, photos or combinations.</li>
+  <li><b>Backup</b> (optional): your game progress, and an encrypted copy of your chat, can be saved to your own Google Drive, in the app's private folder. The chat copy is locked with your 12 secret words, so only you can open it; we never receive either backup.</li>
+  <li><b>Purchases</b>: the one-time Pro upgrade is bought through Google Play. Payment details are handled by Google, not by us.</li>
+</ul>
+
+<h2>Google account data (backup)</h2>
+<p>Backup is optional. If you turn it on, you pick a Google account and allow one permission: <b>access to the app's own folder in your Google Drive</b> (<code>drive.appdata</code>). The app cannot see any other files in your Drive.</p>
+<ul>
+  <li><b>What the app uses:</b> the account's email address and profile picture, shown on the Backup page so you know which account is in use; and the app's Drive folder, to save, find and restore your backups.</li>
+  <li><b>Where it stays:</b> all of this is used only on your phone. The email address, profile picture, Drive access and backup files are never sent to our server or to anyone else.</li>
+  <li><b>Signing out:</b> Sign Out in the Backup page gives back the app's Drive access and forgets the account and its picture on your phone. Your last backup stays in your Drive until you delete it (Google Drive &gt; Settings &gt; Manage apps), and Change Account removes this app's chat backup from the old account first.</li>
+</ul>
+<p>Viper Byte's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Sharing</h2>
+<p>We do not sell or rent any information and do not share it with advertisers. Data is processed only by the service providers named above (Supabase for the chat server, and Google for notifications, crash reports, backup and purchases) to run the app. We may disclose information if required by law; since messages and photos are end-to-end encrypted, we cannot provide their content. The only exception is proof a reporter chose to add to a report: if it shows a crime, especially one involving a child, we may give it to the police or through cybercrime.gov.in as the law requires.</p>
+
+<h2>Security</h2>
+<p>All traffic between the app and the server is encrypted in transit. Messages and photos are also end-to-end encrypted with the Signal Protocol. The server's database only allows each person to reach their own data.</p>
+
+<h2>Keeping and deleting data</h2>
+<ul>
+  <li>Messages on the server are deleted as soon as they are delivered.</li>
+  <li>Deleting a chat or removing a buddy in the app removes that data from your phone.</li>
+  <li>You can delete your account and all server data linked to it from the app (Settings &gt; Profile &gt; Delete Account) or by emailing us at the address below; we do so within 30 days.</li>
+  <li>Uninstalling the app removes everything stored on your phone.</li>
+  <li>Reports, and any proof added to them, are kept for up to 180 days, to handle the report and for our legal duties (IT Rules 2021), then deleted. Proof involving a child that we pass to the police is kept only as long as needed for that.</li>
+  <li>A suspension record is deleted as soon as the suspension is lifted, or 180 days after it ended. It is kept until then even if the account is deleted, so deleting the account cannot be used to escape a suspension.</li>
+  <li>Security log entries are deleted automatically one year after the event (CERT-In asks for at least 180 days; India's data protection rules may ask for one year). They are kept for that time even if the account is deleted (the "account deleted" entry is itself one of them).</li>
+  <li>The Pro trial record (private ID and scrambled phone code) is kept after you delete your account, so that the same account or phone cannot start a second free trial. It contains no name, number or email and is used for nothing else.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Viper Byte is meant for adults (18 and over) and is not directed at children. We do not knowingly collect information from anyone under 18 (a child under India's DPDP Act); if you believe a child has used the chat, contact us and we will delete the account's server data.</p>
+<p>The game can be played by anyone, but the chat is only for people aged 18 or over. Before the chat is set up, you tick "I'm 18 or Older". The tick is only checked on your phone at that moment; nothing about your age is stored or sent to us.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and the date above. Significant changes will also be noted in the app's release notes.</p>
+
+<h2>Grievance Officer</h2>
+<p>For any complaint about the app, another user or your data, you can contact the Grievance Officer, as set out in our <a href="terms-of-use.html">Terms of Use</a>. The developer acts as Grievance Officer: Debdyut Sarker, madsindia.official@gmail.com, Matri Apartments, Flat No A3, Block A, BC 336, Samarpally, Krishnapur, Kolkata - 700102, West Bengal, India. We acknowledge every complaint within 24 hours and resolve it within 15 days.</p>
+
+<h2>Contact</h2>
+<p>M.A.D.S. India · Email: <a href="mailto:madsindia.official@gmail.com">madsindia.official@gmail.com</a></p>
+</div>
+</main>
+</body>
+</html>
